@@ -1,77 +1,160 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سياسة الخصوصية - سجل المعاملات</title>
-<style>
-:root{--bg:#f2f4f3;--card:#fff;--text:#222;--muted:#6b716f;--green:#1e9e45}
-@media (prefers-color-scheme:dark){:root{--bg:#121513;--card:#1c201e;--text:#eceeed;--muted:#8f9693;--green:#3ec96a}}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.9}
-main{max-width:760px;margin:0 auto;padding:20px 16px 40px}
-.card{background:var(--card);border-radius:12px;padding:18px;margin-bottom:16px}
-h1{font-size:24px;color:var(--green);margin:8px 0}
-h2{font-size:18px;margin:18px 0 4px}
-p,li{font-size:16px}
-ul{padding-inline-start:22px;margin:4px 0}
-.muted{color:var(--muted);font-size:14px}
-</style>
+  <!-- Character encoding and responsive viewport setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سياسة الخصوصية - دفترك</title>
+
+  <!-- Embedded styles with automatic Light/Dark mode support -->
+  <style>
+    /* Define CSS color variables for light theme (default) */
+    :root {
+      --bg: #f2f4f3;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #6b716f;
+      --green: #1e9e45;
+    }
+
+    /* Override color variables when the user's device is set to dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121513;
+        --card: #1c201e;
+        --text: #eceeed;
+        --muted: #8f9693;
+        --green: #3ec96a;
+      }
+    }
+
+    /* Base page layout and typography */
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.9;
+    }
+
+    /* Centered main container for comfortable reading width */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    /* Card surface container for each language section */
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 18px;
+    }
+
+    /* Main document title styling */
+    h1 {
+      font-size: 24px;
+      color: var(--green);
+      margin: 8px 0 4px;
+    }
+
+    /* Section subheadings */
+    h2 {
+      font-size: 18px;
+      margin: 20px 0 6px;
+    }
+
+    /* Paragraph and list item sizing */
+    p, li {
+      font-size: 16px;
+    }
+
+    /* Bullet list indentation (supports both RTL and LTR automatically) */
+    ul {
+      padding-inline-start: 22px;
+      margin: 6px 0;
+    }
+
+    /* Secondary text styling (e.g., last updated date) */
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
-<main>
-<h1>سياسة الخصوصية - تطبيق سجل المعاملات</h1>
-<p class="muted">آخر تحديث: نوفمبر ٢٠٢٦</p>
+  <!-- Main content wrapper -->
+  <main>
+    <!-- Header section -->
+    <h1>سياسة الخصوصية - تطبيق دفترك</h1>
+    <p class="muted">آخر تحديث: نوفمبر ٢٠٢٦</p>
 
-<div class="card">
-<h2>١. عن التطبيق</h2>
-<p>«سجل المعاملات» تطبيق من تطوير مهندس البرمجيات محمد خالد الطيب محمد. هو دفتر بسيط على هاتفك تسجّل فيه العمليات الواردة (الدخل): المبلغ ورقم العملية وملاحظة إن أردت.</p>
+    <!-- Arabic Privacy Policy Card -->
+    <div class="card">
+      <h2>١. مقدمة وتعريف بالتطبيق</h2>
+      <p>«دفترك» هو تطبيق من تطوير مهندس البرمجيات محمد خالد الطيب محمد. صُمم التطبيق ليكون دفتراً بسيطاً وعملياً على هاتفك لتسجيل العمليات المالية الواردة (الدخل)، مثل المبلغ ورقم العملية وأي ملاحظة إضافية ترغب في تدوينها.</p>
 
-<h2>٢. كيف يعمل التطبيق</h2>
-<p><b>عند أول فتح:</b> يعرض التطبيق هذه السياسة ويطلب موافقتك عليها. بعدها تسجّل الدخول بحساب جوجل، ومن حسابك يأخذ التطبيق بريدك الإلكتروني واسمك فقط، ليتأكد أن التطبيق مفعّل لك.</p>
-<p><b>عند تسجيل عملية:</b> تكتب المبلغ ورقم العملية، فتُحفظ في هاتفك مع تاريخها ووقتها. وتستطيع تعديلها أو حذفها في أي وقت.</p>
-<p><b>حفظ نسخة من معاملاتك:</b> كلما سجّلت عملية والهاتف متصل بالإنترنت، يحفظ التطبيق نسخة من معاملاتك داخل حسابك أنت في جوجل، في مكان مخصص للتطبيق ومخفي عنك، ولا يستطيع التطبيق رؤية بقية ملفاتك. هذه النسخة ملك لحسابك، ولا يصل إليها المطوّر.</p>
-<p><b>عند تغيير الهاتف:</b> تسجّل الدخول بنفس الحساب في الهاتف الجديد، فتعود معاملاتك من النسخة المحفوظة، ويتوقف التطبيق عن العمل في الهاتف القديم.</p>
-<p><b>الاتصال بالإنترنت:</b> يستخدمه التطبيق لتسجيل الدخول، ولحفظ النسخة، وللتأكد من أن الترخيص ما زال ساريًا ومن الوقت الصحيح. ويستمر التطبيق في العمل بدون إنترنت لمدة ١٠ أيام، ثم يطلب منك الاتصال.</p>
-<p><b>ما لا يوجد في التطبيق:</b> لا توجد فيه إعلانات، ولا يتتبع ما تفعله، ولا يرسل معاملاتك لأي جهة غير حسابك في جوجل.</p>
+      <h2>٢. البيانات التي نجمعها وكيف نستخدمها</h2>
+      <p>نحن نحرص على جمع الحد الأدنى فقط من البيانات اللازمة لتشغيل التطبيق بأمان:</p>
+      <ul>
+        <li><b>بيانات حساب جوجل:</b> عند تسجيل الدخول بحسابك في جوجل، يطّلع التطبيق على اسمك وبريدك الإلكتروني فقط؛ وذلك لربط نسختك الاحتياطية بحسابك وتمكينك من استعادة بياناتك عند الحاجة.</li>
+        <li><b>سجلات المعاملات:</b> المبالغ وأرقام العمليات والملاحظات التي تدخلها تُحفظ محلياً على هاتفك مع تاريخ ووقت كل عملية.</li>
+      </ul>
 
-<h2>٣. حذف بياناتك</h2>
-<p>تحذف أي معاملة من داخل التطبيق. ولحذف النسخة المحفوظة، احذف بيانات التطبيق من حسابك في جوجل، أو ألغِ إذن التطبيق من إعدادات حسابك.</p>
+      <h2>٣. تخزين البيانات والنسخ الاحتياطي السحابي</h2>
+      <p>عند اتصال هاتفك بالإنترنت، يقوم التطبيق تلقائياً بحفظ نسخة من معاملاتك داخل مساحتك الخاصة في جوجل درايف (في مجلد مخفي مخصص للتطبيق فقط). لا يستطيع التطبيق الوصول إلى أي ملفات أخرى في حسابك، كما أن هذه البيانات ملك لك وحدك ولا يملك المطوّر أي صلاحية للاطلاع عليها أو الوصول إليها.</p>
 
-<h2>٤. النسخة الاحتياطية</h2>
-<p>أنت مسؤول عن حفظ معاملاتك. إذا حذفت بيانات التطبيق أو أزلته قبل أن تُحفظ النسخة، فقد تضيع المعاملات التي لم تُحفظ بعد.</p>
+      <h2>٤. استخدام الاتصال بالإنترنت</h2>
+      <p>يحتاج التطبيق إلى الاتصال بالإنترنت لتسجيل الدخول بحساب جوجل ومزامنة نسختك الاحتياطية وحفظها بأمان في حسابك الشخصي.</p>
 
-<h2>٥. الشراء والاسترجاع</h2>
-<p>عند شراء التطبيق وتفعيله لا يمكن استرجاع المبلغ المدفوع. الترخيص لشخص واحد وحساب واحد.</p>
+      <h2>٥. خصوصيتك وأمان بياناتك</h2>
+      <p>نلتزم بحماية خصوصيتك بشكل كامل: التطبيق خالٍ تماماً من الإعلانات، ولا يستخدم أي أدوات تتبع لسلوكك، ولا يشارك بياناتك أو معاملاتك مع أي طرف ثالث أو خادم خارجي؛ بياناتك تبقى بين هاتفك وحسابك الشخصي في جوجل فقط.</p>
 
-<h2>٦. حقوق التطبيق</h2>
-<p>لا يجوز تعديل التطبيق أو تحويله أو إعادة تغليفه أو بيعه لغيرك دون إذن مكتوب من صاحبه. ولا مانع من مشاركة التطبيق ونشره، فهو لا يعمل إلا بعد التفعيل.</p>
+      <h2>٦. التحكم في بياناتك وحذفها</h2>
+      <p>لك كامل الحرية في إدارة بياناتك؛ يمكنك تعديل أو حذف أي معاملة مباشرة من داخل التطبيق في أي وقت. وإذا رغبت في مسح النسخة السحابية بالكامل، يمكنك حذف بيانات التطبيق من إعدادات حسابك في جوجل أو إلغاء إذن الوصول الممنوح للتطبيق.</p>
 
-<h2>٧. تغيير هذه السياسة</h2>
-<p>قد تتغير هذه السياسة مستقبلاً، وسيطلب التطبيق موافقتك عليها من جديد.</p>
+      <h2>٧. التعديلات على سياسة الخصوصية</h2>
+      <p>قد نقوم بتحديث هذه السياسة مستقبلاً لتواكب أي تحسينات في التطبيق. وفي حال حدوث أي تغيير، سيعرض لك التطبيق النسخة المحدثة ويطلب موافقتك عليها مجدداً.</p>
 
-<h2>٨. التواصل</h2>
-<p>لأي سؤال أو طلب: <span dir="ltr">dev.mk.contact@gmail.com</span></p>
-</div>
+      <h2>٨. تواصل معنا</h2>
+      <p>إذا كان لديك أي استفسار بخصوص خصوصيتك أو بياناتك، يسعدنا تواصلك معنا عبر البريد الإلكتروني: <span dir="ltr">dev.mk.contact@gmail.com</span></p>
+    </div>
 
-<div class="card" dir="ltr" style="text-align:left">
-<h1>Privacy Policy - Income Tracker (سجل المعاملات)</h1>
-<p class="muted">Last updated: November 2026</p>
-<p><b>About the app.</b> Developed by Software Engineer Mohammed Khalid Al-Tayeb Mohammed. It is a simple ledger on your phone for recording incoming payments: amount, reference number and an optional note.</p>
-<p><b>How the app works.</b></p>
-<ul>
-<li><b>First launch:</b> the app shows this policy and asks for your agreement. You then sign in with your Google account, and the app takes only your email and name to confirm the app is activated for you.</li>
-<li><b>Recording a payment:</b> you enter the amount and reference number, and it is saved on your phone with its date and time. You can edit or delete it at any time.</li>
-<li><b>Saving a copy:</b> when your phone is online, the app saves a copy of your transactions in your own Google account, in a private area reserved for the app. The app cannot see your other files, and the developer cannot access this copy.</li>
-<li><b>New phone:</b> you sign in with the same account on the new phone and your transactions are restored from the saved copy. The app then stops working on the old phone.</li>
-<li><b>Internet use:</b> for sign-in, saving the copy, and checking that the license is valid and the time is correct. The app works offline for up to 10 days, then asks you to connect.</li>
-<li><b>Not part of the app:</b> there are no ads, no tracking, and your transactions are not sent anywhere except your own Google account.</li>
-</ul>
-<p>The app’s use of information received from Google follows the Google API Services User Data Policy, including its Limited Use requirements.</p>
-<p><b>Deleting your data.</b> Delete transactions inside the app. To delete the saved copy, remove the app data from your Google account or revoke the app’s access in your account settings.</p>
-<p><b>Backups.</b> You are responsible for keeping your records safe. Unsaved transactions may be lost if you clear the app’s data or uninstall it.</p>
-<p><b>Purchases.</b> Payments are non-refundable once the app has been sold and activated. One license covers one person and one account.</p>
-<p><b>Contact:</b> dev.mk.contact@gmail.com</p>
-</div>
-</main>
+    <!-- English Privacy Policy Card (Explicitly set to Left-to-Right direction) -->
+    <div class="card" dir="ltr" style="text-align: left;">
+      <h1>Privacy Policy - Daftarak (دفترك)</h1>
+      <p class="muted">Last updated: November 2026</p>
+
+      <h2>1. Introduction</h2>
+      <p><strong>Daftarak (دفترك)</strong> is developed by Software Engineer Mohammed Khalid Al-Tayeb Mohammed. It is a straightforward personal ledger on your phone designed to help you record incoming payments, including the amount, reference number, and optional notes.</p>
+
+      <h2>2. Information We Collect &amp; How We Use It</h2>
+      <p>We only access the minimum information required for the app to function properly:</p>
+      <ul>
+        <li><strong>Google Account Information:</strong> When you sign in with Google, the app accesses only your name and email address to link your backup data to your account and allow you to restore your records when needed.</li>
+        <li><strong>Transaction Records:</strong> The payment amounts, reference numbers, and notes you enter are stored locally on your device along with their date and time.</li>
+      </ul>
+
+      <h2>3. Data Storage &amp; Cloud Backup</h2>
+      <p>Whenever your phone is online, the app saves a backup copy of your transactions inside a private, hidden app folder within your own Google account. The app cannot see or access any of your other Google Drive files, and the developer has zero access to your records—your data remains exclusively yours.</p>
+
+      <h2>4. Internet Usage</h2>
+      <p>An internet connection is used solely for signing in with your Google account and syncing your backup copy safely to your personal cloud storage.</p>
+
+      <h2>5. Privacy &amp; Google API Compliance</h2>
+      <p>There are no ads, no behavioral tracking, and no third-party data sharing. Your transactions are never sent anywhere except your own Google account. Furthermore, the app’s use of information received from Google APIs strictly adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+      <h2>6. Managing &amp; Deleting Your Data</h2>
+      <p>You remain in full control of your records. You can edit or delete any transaction directly inside the app at any time. To permanently remove your cloud backup, delete the app's data from your Google account settings or revoke the app's access permissions.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Whenever changes are made, the app will notify you and ask for your renewed agreement before continuing.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>For any questions or privacy-related requests, please reach out to: dev.mk.contact@gmail.com</p>
+    </div>
+  </main>
 </body>
 </html>
